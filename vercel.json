@@ -4,14 +4,5 @@
       "runtime": "@vercel/node@3.2.0"
     }
   },
-  "rewrites": [
-    {
-      "source": "/api/:path*",
-      "destination": "/api/:path*"
-    },
-    {
-      "source": "/:path*",
-      "destination": "/index.html"
-    }
-  ]
+  "cleanUrls": true
 }
