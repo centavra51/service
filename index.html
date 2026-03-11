@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ремонт в Кишинёве 24/7 | Сантехник, Электрик, Плиточник</title>
+  <meta name="description" content="Ремонт в Chișinău: сантехник, электрик, плиточник и другие работы 24/7." />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="container header">
+    <strong>Repair24/7</strong>
+    <button id="langToggle" class="btn-outline" aria-label="Switch language">RO</button>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1 data-i18n="hero">Мы — ваша команда ремонта в Кишинёве: услуги 24/7</h1>
+      <p data-i18n="sub">Сантехника, электрика, плитка, покраска, полы. Быстрый выезд и честная смета.</p>
+      <a class="btn" href="#contact" data-i18n="cta">Оставить заявку</a>
+    </section>
+
+    <section>
+      <h2 data-i18n="quiz">Калькулятор стоимости</h2>
+      <div class="card">
+        <label data-i18n="service">Тип услуги</label>
+        <select id="qService">
+          <option value="plumbing">Сантехника</option>
+          <option value="electrical">Электрика</option>
+          <option value="tiling">Плитка</option>
+        </select>
+        <label data-i18n="amount">Площадь/точки/метры</label>
+        <input id="qAmount" type="number" min="1" value="10" />
+        <button id="calcBtn" class="btn" type="button" data-i18n="calc">Рассчитать</button>
+        <p id="calcResult"></p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 data-i18n="contact">Форма заявки</h2>
+      <form id="leadForm" class="card">
+        <input required name="name" placeholder="Имя / Nume" />
+        <input required name="phone" placeholder="Телефон / Telefon" />
+        <input required name="address" placeholder="Адрес / Adresă" />
+        <input required name="service" id="serviceField" placeholder="Услуга" />
+        <textarea name="description" placeholder="Описание"></textarea>
+        <button class="btn" type="submit" data-i18n="send">Отправить</button>
+        <p id="formStatus"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>
