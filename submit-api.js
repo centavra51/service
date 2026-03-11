@@ -1,16 +1,20 @@
 function readRawBody(req) {
   return new Promise((resolve, reject) => {
     let body = '';
+
     req.on('data', (chunk) => {
       body += chunk;
     });
+
     req.on('end', () => resolve(body));
     req.on('error', reject);
   });
 }
 
 async function parsePayload(req) {
-  if (req.body && typeof req.body === 'object') return req.body;
+  if (req.body && typeof req.body === 'object') {
+    return req.body;
+  }
 
   const contentType = String(req.headers['content-type'] || '');
 
@@ -41,7 +45,6 @@ module.exports = async (req, res) => {
   }
 
   const payload = await parsePayload(req);
-
   const name = String(payload.name || '').trim();
   const phone = String(payload.phone || '').trim();
   const address = String(payload.address || '').trim();
@@ -53,15 +56,21 @@ module.exports = async (req, res) => {
     return;
   }
 
-  const text = `🔧 New order\nName: ${name}\nPhone: ${phone}\nAddress: ${address}\nService: ${service}\nDescription: ${description}`;
+  const text = [
+    'New order',
+    `Name: ${name}`,
+    `Phone: ${phone}`,
+    `Address: ${address}`,
+    `Service: ${service}`,
+    `Description: ${description || '-'}`
+  ].join('\n');
 
   const botToken = process.env.TELEGRAM_BOT_TOKEN;
   const chatId = process.env.TELEGRAM_CHAT_ID;
 
   try {
     if (botToken && chatId) {
-      const tgUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
-      const tgResponse = await fetch(tgUrl, {
+      const tgResponse = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ chat_id: chatId, text })
@@ -69,7 +78,10 @@ module.exports = async (req, res) => {
 
       if (!tgResponse.ok) {
         const tgBody = await tgResponse.text();
-        res.status(502).json({ error: 'Telegram API error', detail: tgBody.slice(0, 500) });
+        res.status(502).json({
+          error: 'Telegram API error',
+          detail: tgBody.slice(0, 500)
+        });
         return;
       }
     } else {
@@ -78,6 +90,9 @@ module.exports = async (req, res) => {
 
     res.status(200).json({ ok: true });
   } catch (error) {
-    res.status(500).json({ error: 'Internal error', detail: String(error && error.message ? error.message : error) });
+    res.status(500).json({
+      error: 'Internal error',
+      detail: String(error && error.message ? error.message : error)
+    });
   }
 };
