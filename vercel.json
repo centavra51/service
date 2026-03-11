@@ -1,17 +1,7 @@
 {
   "version": 2,
   "cleanUrls": true,
-  "builds": [
-    {
-      "src": "submit-api.js",
-      "use": "@vercel/node@3.2.0"
-    }
-  ],
   "routes": [
-    {
-      "src": "^/api/submit$",
-      "dest": "/submit-api.js"
-    },
     {
       "handle": "filesystem"
     },

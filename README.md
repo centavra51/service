@@ -13,7 +13,7 @@
 ## Как это работает
 
 - `index.html`, `style.css`, `script.js` отдают статическую страницу
-- `submit-api.js` обрабатывает `POST /api/submit`
+- `api/submit.js` обрабатывает `POST /api/submit`
 - `vercel.json` маршрутизирует запросы на серверную функцию и SPA-страницу
 
 ## Проверка после деплоя
