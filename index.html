@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
@@ -10,11 +10,12 @@
   />
   <meta
     name="keywords"
-    content="ремонт Кишинев, сантехник Кишинев, электрик Кишинев, ремонт квартиры Кишинев, бытовой сервис"
+    content="ремонт Кишинев, сантехник Кишинев, электрик Кишинев, ремонт квартиры Кишинев, бытовой сервис, instalator Chisinau, electrician Chisinau"
   />
   <meta name="robots" content="index,follow" />
   <meta name="theme-color" content="#0f172a" />
   <link rel="preload" href="/assets/hero-service.svg" as="image" type="image/svg+xml" />
+  <link rel="preload" href="/assets/article-plumbing.svg" as="image" type="image/svg+xml" />
   <link rel="stylesheet" href="/style.css" />
   <script type="application/ld+json">
     {
@@ -22,16 +23,7 @@
       "@type": "LocalBusiness",
       "name": "Repair24/7",
       "description": "Сервис ремонта и бытовых услуг в Кишиневе и пригородах: сантехника, электрика, плитка, отделка, мелкий и срочный ремонт.",
-      "areaServed": [
-        "Кишинев",
-        "Буюканы",
-        "Ботаника",
-        "Рышкановка",
-        "Чеканы",
-        "Телецентр",
-        "Дурлешты",
-        "Кодру"
-      ],
+      "areaServed": ["Кишинев", "Буюканы", "Ботаника", "Рышкановка", "Чеканы", "Телецентр", "Дурлешты", "Кодру"],
       "serviceType": [
         "Сантехнические работы",
         "Электромонтаж",
@@ -40,10 +32,7 @@
         "Мелкий бытовой ремонт"
       ],
       "priceRange": "$$",
-      "availableLanguage": [
-        "ru",
-        "ro"
-      ]
+      "availableLanguage": ["ru", "ro"]
     }
   </script>
   <script type="application/ld+json">
@@ -79,26 +68,38 @@
     }
   </script>
 </head>
-<body>
+<body
+  data-page="home"
+  data-title-ru="Ремонт и бытовой сервис в Кишиневе 24/7 | Сантехник, электрик, отделка"
+  data-title-ro="Servicii de reparatii in Chisinau 24/7 | Instalator, electrician, finisaje"
+  data-description-ru="Сервис ремонта в Кишиневе и пригородах: сантехник, электрик, плитка, отделка, срочный выезд и понятная смета."
+  data-description-ro="Serviciu de reparatii in Chisinau si suburbii: instalator, electrician, faianta, finisaje, interventii urgente si deviz clar."
+>
   <header class="site-header">
     <div class="container header-row">
       <a class="brand" href="#top" aria-label="Repair24/7">
         <span class="brand-mark">R</span>
         <span class="brand-copy">
           <strong>Repair24/7</strong>
-          <small>ремонт и бытовой сервис в Кишиневе</small>
+          <small data-ru="ремонт и бытовой сервис в Кишиневе" data-ro="reparatii si servicii pentru casa in Chisinau">ремонт и бытовой сервис в Кишиневе</small>
         </span>
       </a>
 
-      <nav class="site-nav" aria-label="Навигация по лендингу">
-        <a href="#services">Услуги</a>
-        <a href="#benefits">Преимущества</a>
-        <a href="#calculator">Калькулятор</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Заявка</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#services" data-ru="Услуги" data-ro="Servicii">Услуги</a>
+        <a href="#benefits" data-ru="Преимущества" data-ro="Avantaje">Преимущества</a>
+        <a href="#articles" data-ru="Статьи" data-ro="Articole">Статьи</a>
+        <a href="#calculator" data-ru="Калькулятор" data-ro="Calculator">Калькулятор</a>
+        <a href="#contact" data-ru="Заявка" data-ro="Cerere">Заявка</a>
       </nav>
 
-      <a class="btn btn-small" href="#contact">Оставить заявку</a>
+      <div class="header-actions">
+        <div class="lang-switch" aria-label="Language switcher">
+          <button class="lang-btn is-active" type="button" data-lang-trigger="ru" aria-pressed="true">RU</button>
+          <button class="lang-btn" type="button" data-lang-trigger="ro" aria-pressed="false">RO</button>
+        </div>
+        <a class="btn btn-small header-cta" href="#contact" data-ru="Оставить заявку" data-ro="Trimite cerere">Оставить заявку</a>
+      </div>
     </div>
   </header>
 
@@ -106,22 +107,19 @@
     <section class="screen hero-screen" id="top">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Кишинев и пригороды, 24/7</p>
-          <h1>Один сервис для ремонта квартиры, дома и офиса без хаоса, задержек и скрытых работ</h1>
-          <p class="hero-text">
-            Берём на себя сантехнику, электрику, плитку, отделку и мелкий бытовой ремонт.
-            Помогаем быстро закрыть аварийную задачу и аккуратно довести до результата плановые работы.
-          </p>
+          <p class="eyebrow" data-ru="Кишинев и пригороды, 24/7" data-ro="Chisinau si suburbii, 24/7">Кишинев и пригороды, 24/7</p>
+          <h1 data-ru="Один сервис для ремонта квартиры, дома и офиса без хаоса и перегруза" data-ro="Un singur serviciu pentru reparatii in apartament, casa sau birou fara haos">Один сервис для ремонта квартиры, дома и офиса без хаоса и перегруза</h1>
+          <p class="hero-text" data-ru="Берём на себя сантехнику, электрику, плитку, отделку и мелкий бытовой ремонт. Помогаем быстро закрыть аварийную задачу и аккуратно довести до результата плановые работы." data-ro="Preluam instalatii sanitare, electricitate, faianta, finisaje si reparatii mici pentru casa. Rezolvam rapid urgentele si ducem corect la capat lucrarile planificate.">Берём на себя сантехнику, электрику, плитку, отделку и мелкий бытовой ремонт. Помогаем быстро закрыть аварийную задачу и аккуратно довести до результата плановые работы.</p>
 
           <div class="hero-actions">
-            <a class="btn" href="#contact">Получить расчёт</a>
-            <a class="btn btn-ghost" href="#services">Посмотреть услуги</a>
+            <a class="btn" href="#contact" data-ru="Получить расчёт" data-ro="Cere estimare">Получить расчёт</a>
+            <a class="btn btn-ghost" href="#articles" data-ru="Читать статьи" data-ro="Citeste articole">Читать статьи</a>
           </div>
 
-          <ul class="hero-points" aria-label="Ключевые преимущества">
-            <li>Смета до начала работ</li>
-            <li>Чёткие этапы и понятная коммуникация</li>
-            <li>Выезд по Кишиневу и ближайшим пригородам</li>
+          <ul class="hero-points" aria-label="Key benefits">
+            <li data-ru="Смета до начала работ" data-ro="Deviz inainte de lucrari">Смета до начала работ</li>
+            <li data-ru="Понятные этапы и нормальная коммуникация" data-ro="Etape clare si comunicare normala">Понятные этапы и нормальная коммуникация</li>
+            <li data-ru="Выезд по Кишиневу и ближайшим пригородам" data-ro="Interventii in Chisinau si suburbii apropiate">Выезд по Кишиневу и ближайшим пригородам</li>
           </ul>
         </div>
 
@@ -134,11 +132,13 @@
               height="640"
               fetchpriority="high"
               decoding="async"
+              data-ru-alt="Мастер бытового сервиса выполняет ремонт в современной квартире"
+              data-ro-alt="Mester de reparatii lucreaza intr-un apartament modern"
             />
           </div>
           <div class="hero-note">
-            <strong>Сервисный подход</strong>
-            <p>Не просто мастер на вызов, а единая точка входа для бытовых и ремонтных задач.</p>
+            <strong data-ru="Сервисный подход" data-ro="Abordare de serviciu">Сервисный подход</strong>
+            <p data-ru="Не просто мастер на вызов, а единая точка входа для бытовых и ремонтных задач." data-ro="Nu doar un mester la apel, ci un punct unic pentru sarcini de reparatie si intretinere.">Не просто мастер на вызов, а единая точка входа для бытовых и ремонтных задач.</p>
           </div>
         </div>
       </div>
@@ -147,25 +147,24 @@
     <section class="screen stat-screen">
       <div class="container">
         <div class="section-heading compact">
-          <p class="section-kicker">Экран 2</p>
-          <h2>Лендинг сразу отвечает на основные вопросы клиента</h2>
+          <h2 data-ru="Лендинг сразу отвечает на главные вопросы клиента" data-ro="Landingul raspunde imediat la intrebarile principale ale clientului">Лендинг сразу отвечает на главные вопросы клиента</h2>
         </div>
         <div class="stats-grid">
           <article class="stat-card">
             <strong>24/7</strong>
-            <p>Принимаем срочные заявки, когда нужен быстрый выезд мастера.</p>
+            <p data-ru="Принимаем срочные заявки, когда нужен быстрый выезд мастера." data-ro="Preluam cereri urgente cand este nevoie de interventie rapida.">Принимаем срочные заявки, когда нужен быстрый выезд мастера.</p>
           </article>
           <article class="stat-card">
-            <strong>5 направлений</strong>
-            <p>Сантехника, электрика, плитка, отделка и мелкий бытовой сервис.</p>
+            <strong data-ru="5 направлений" data-ro="5 directii">5 направлений</strong>
+            <p data-ru="Сантехника, электрика, плитка, отделка и мелкий бытовой сервис." data-ro="Instalatii sanitare, electricitate, faianta, finisaje si servicii mici pentru casa.">Сантехника, электрика, плитка, отделка и мелкий бытовой сервис.</p>
           </article>
           <article class="stat-card">
-            <strong>1 подрядчик</strong>
-            <p>Клиенту не нужно собирать разных специалистов под одну задачу.</p>
+            <strong data-ru="1 подрядчик" data-ro="1 echipa">1 подрядчик</strong>
+            <p data-ru="Клиенту не нужно собирать разных специалистов под одну задачу." data-ro="Clientul nu trebuie sa coordoneze mai multi specialisti pentru aceeasi lucrare.">Клиенту не нужно собирать разных специалистов под одну задачу.</p>
           </article>
           <article class="stat-card">
-            <strong>0 лишнего веса</strong>
-            <p>Страница без тяжёлых библиотек и внешних шрифтов для быстрой загрузки.</p>
+            <strong data-ru="Быстрая загрузка" data-ro="Incarcare rapida">Быстрая загрузка</strong>
+            <p data-ru="Без тяжёлых библиотек и внешних шрифтов, чтобы страница открывалась быстро." data-ro="Fara librarii grele si fara fonturi externe, pentru incarcare rapida.">Без тяжёлых библиотек и внешних шрифтов, чтобы страница открывалась быстро.</p>
           </article>
         </div>
       </div>
@@ -174,71 +173,62 @@
     <section class="screen" id="services">
       <div class="container">
         <div class="section-heading">
-          <p class="section-kicker">Экран 3</p>
-          <h2>Услуги сервиса, которые закрывают большинство бытовых и ремонтных задач</h2>
-          <p>
-            Структура раздела помогает SEO: отдельные карточки с ключевыми категориями услуг и понятным описанием
-            того, что получает клиент.
-          </p>
+          <h2 data-ru="Услуги сервиса, которые закрывают большинство бытовых и ремонтных задач" data-ro="Servicii care acopera majoritatea lucrarilor de reparatii si intretinere">Услуги сервиса, которые закрывают большинство бытовых и ремонтных задач</h2>
+          <p data-ru="Отдельные карточки услуг усиливают SEO-структуру и помогают человеку быстро понять, что именно можно заказать." data-ro="Cardurile separate ale serviciilor intaresc structura SEO si ajuta vizitatorul sa inteleaga rapid ce poate comanda.">Отдельные карточки услуг усиливают SEO-структуру и помогают человеку быстро понять, что именно можно заказать.</p>
         </div>
 
         <div class="services-grid">
           <article class="service-card">
             <span>01</span>
-            <h3>Сантехнические работы</h3>
-            <p>Устранение протечек, замена смесителей, сифонов, труб, подключение сантехники и диагностика проблем.</p>
+            <h3 data-ru="Сантехнические работы" data-ro="Lucrari sanitare">Сантехнические работы</h3>
+            <p data-ru="Протечки, смесители, сифоны, трубы, подключение сантехники и диагностика проблем." data-ro="Scurgeri, baterii, sifoane, tevi, montaj obiecte sanitare si diagnostic.">Протечки, смесители, сифоны, трубы, подключение сантехники и диагностика проблем.</p>
           </article>
           <article class="service-card">
             <span>02</span>
-            <h3>Электрика</h3>
-            <p>Розетки, автоматы, освещение, поиск неисправностей, установка техники и мелкий электромонтаж.</p>
+            <h3 data-ru="Электрика" data-ro="Electricitate">Электрика</h3>
+            <p data-ru="Розетки, автоматы, освещение, поиск неисправностей и мелкий электромонтаж." data-ro="Prize, sigurante, iluminat, diagnostic si lucrari electrice mici.">Розетки, автоматы, освещение, поиск неисправностей и мелкий электромонтаж.</p>
           </article>
           <article class="service-card">
             <span>03</span>
-            <h3>Плитка и санузлы</h3>
-            <p>Подготовка оснований, укладка плитки, затирка, локальный ремонт и аккуратная доводка сложных зон.</p>
+            <h3 data-ru="Плитка и санузлы" data-ro="Faianta si bai">Плитка и санузлы</h3>
+            <p data-ru="Подготовка основания, укладка плитки, затирка и локальный ремонт мокрых зон." data-ro="Pregatire suport, montaj faianta, chituri si reparatii locale in zone umede.">Подготовка основания, укладка плитки, затирка и локальный ремонт мокрых зон.</p>
           </article>
           <article class="service-card">
             <span>04</span>
-            <h3>Косметический ремонт</h3>
-            <p>Шпаклёвка, покраска, обновление стен и потолков, локальная отделка после аварий и износа.</p>
+            <h3 data-ru="Косметический ремонт" data-ro="Renovare cosmetica">Косметический ремонт</h3>
+            <p data-ru="Шпаклёвка, покраска, обновление стен и потолков после износа или аварий." data-ro="Glet, vopsire, improspatarea peretilor si tavanelor dupa uzura sau avarii.">Шпаклёвка, покраска, обновление стен и потолков после износа или аварий.</p>
           </article>
           <article class="service-card">
             <span>05</span>
-            <h3>Мелкий бытовой сервис</h3>
-            <p>Сборка, крепления, замена фурнитуры, карнизы, полки, герметизация и мелкие доработки по дому.</p>
+            <h3 data-ru="Мелкий бытовой сервис" data-ro="Servicii mici pentru casa">Мелкий бытовой сервис</h3>
+            <p data-ru="Сборка, крепления, герметизация, полки, карнизы и мелкие доработки по дому." data-ro="Montaj, fixari, etansari, polite, galerii si ajustari mici prin casa.">Сборка, крепления, герметизация, полки, карнизы и мелкие доработки по дому.</p>
           </article>
           <article class="service-card">
             <span>06</span>
-            <h3>Комплексные задачи</h3>
-            <p>Когда нужно не одно действие, а несколько этапов: от диагностики до полной сдачи готового результата.</p>
+            <h3 data-ru="Комплексные задачи" data-ro="Lucrari complexe">Комплексные задачи</h3>
+            <p data-ru="Когда нужно несколько этапов подряд: от диагностики до полной сдачи результата." data-ro="Cand sunt necesare mai multe etape consecutive: de la diagnostic la predarea rezultatului.">Когда нужно несколько этапов подряд: от диагностики до полной сдачи результата.</p>
           </article>
         </div>
       </div>
     </section>
-
     <section class="screen accent-screen">
       <div class="container split-grid">
         <div>
           <div class="section-heading">
-            <p class="section-kicker">Экран 4</p>
-            <h2>Когда этот сервис особенно полезен</h2>
+            <h2 data-ru="Когда этот сервис особенно полезен" data-ro="Cand acest serviciu este deosebit de util">Когда этот сервис особенно полезен</h2>
           </div>
           <ul class="feature-list">
-            <li>Нужно срочно решить проблему в ванной, кухне или щитке.</li>
-            <li>После арендаторов или перед заселением нужен быстрый косметический апгрейд.</li>
-            <li>Есть список мелких задач, которые никто не хочет брать в комплексе.</li>
-            <li>Нужен один ответственный подрядчик вместо нескольких контактов и хаотичных договорённостей.</li>
+            <li data-ru="Нужно срочно решить проблему в ванной, кухне или электрощите." data-ro="Trebuie rezolvata rapid o problema in baie, bucatarie sau tabloul electric.">Нужно срочно решить проблему в ванной, кухне или электрощите.</li>
+            <li data-ru="Перед заселением или после арендаторов нужен быстрый апгрейд помещения." data-ro="Inainte de mutare sau dupa chiriasi este nevoie de o improspatare rapida.">Перед заселением или после арендаторов нужен быстрый апгрейд помещения.</li>
+            <li data-ru="Есть список мелких задач, которые неудобно отдавать разным людям." data-ro="Exista o lista de sarcini mici pe care este incomod sa le imparti la oameni diferiti.">Есть список мелких задач, которые неудобно отдавать разным людям.</li>
+            <li data-ru="Нужен один ответственный подрядчик вместо хаотичных договорённостей." data-ro="Este nevoie de o singura echipa responsabila in locul unor intelegeri haotice.">Нужен один ответственный подрядчик вместо хаотичных договорённостей.</li>
           </ul>
         </div>
 
         <aside class="callout-card">
-          <p class="callout-label">Типовой запрос</p>
-          <h3>“Нам нужно, чтобы всё заработало и выглядело аккуратно уже на этой неделе”</h3>
-          <p>
-            Именно под такие запросы и построен сервис: быстро оценить ситуацию, предложить этапы и довести работу до
-            понятного результата.
-          </p>
+          <p class="callout-label" data-ru="Типовой запрос" data-ro="Cerere tipica">Типовой запрос</p>
+          <h3 data-ru="Нам нужно, чтобы всё заработало и выглядело аккуратно уже на этой неделе" data-ro="Avem nevoie ca totul sa functioneze si sa arate ingrijit chiar saptamana aceasta">Нам нужно, чтобы всё заработало и выглядело аккуратно уже на этой неделе</h3>
+          <p data-ru="Под такие запросы и построен сервис: быстро оценить ситуацию, предложить этапы и довести работу до понятного результата." data-ro="Pentru astfel de cereri este construit serviciul: evaluare rapida, etape clare si rezultat usor de inteles.">Под такие запросы и построен сервис: быстро оценить ситуацию, предложить этапы и довести работу до понятного результата.</p>
         </aside>
       </div>
     </section>
@@ -246,26 +236,25 @@
     <section class="screen" id="benefits">
       <div class="container">
         <div class="section-heading">
-          <p class="section-kicker">Экран 5</p>
-          <h2>Почему клиенты выбирают сервисный формат, а не случайного мастера из объявления</h2>
+          <h2 data-ru="Почему клиенты выбирают сервисный формат, а не случайного мастера" data-ro="De ce clientii aleg un serviciu organizat, nu un mester ales la intamplare">Почему клиенты выбирают сервисный формат, а не случайного мастера</h2>
         </div>
 
         <div class="benefits-grid">
           <article class="benefit-card">
-            <h3>Понятный объём работ</h3>
-            <p>Клиент понимает, что именно будет сделано, в каком порядке и за что он платит.</p>
+            <h3 data-ru="Понятный объём работ" data-ro="Volum clar de lucrari">Понятный объём работ</h3>
+            <p data-ru="Клиент понимает, что будет сделано, в каком порядке и за что он платит." data-ro="Clientul intelege ce se face, in ce ordine si pentru ce plateste.">Клиент понимает, что будет сделано, в каком порядке и за что он платит.</p>
           </article>
           <article class="benefit-card">
-            <h3>Нормальная коммуникация</h3>
-            <p>Без пропавших звонков, неясных сроков и внезапно выросшего списка “обязательных” допработ.</p>
+            <h3 data-ru="Нормальная коммуникация" data-ro="Comunicare normala">Нормальная коммуникация</h3>
+            <p data-ru="Без пропавших звонков, неясных сроков и случайных допработ." data-ro="Fara apeluri disparute, termene neclare si lucrari suplimentare aparute din senin.">Без пропавших звонков, неясных сроков и случайных допработ.</p>
           </article>
           <article class="benefit-card">
-            <h3>Акцент на результате</h3>
-            <p>Важно не просто закрыть задачу, а оставить пространство исправным, аккуратным и готовым к использованию.</p>
+            <h3 data-ru="Результат, а не суета" data-ro="Rezultat, nu agitatie">Результат, а не суета</h3>
+            <p data-ru="Задача должна быть не только закрыта, но и аккуратно доведена до рабочего состояния." data-ro="Lucrarea trebuie nu doar inchisa, ci adusa intr-o stare functionala si ingrijita.">Задача должна быть не только закрыта, но и аккуратно доведена до рабочего состояния.</p>
           </article>
           <article class="benefit-card">
-            <h3>Подходит для частных и бизнес-заказчиков</h3>
-            <p>Квартиры, дома, офисы, объекты аренды, небольшие коммерческие помещения.</p>
+            <h3 data-ru="Подходит для частных и бизнес-заказчиков" data-ro="Potrivit pentru persoane fizice si companii">Подходит для частных и бизнес-заказчиков</h3>
+            <p data-ru="Квартиры, дома, офисы, объекты аренды и небольшие коммерческие помещения." data-ro="Apartamente, case, birouri, spatii de inchiriat si mici spatii comerciale.">Квартиры, дома, офисы, объекты аренды и небольшие коммерческие помещения.</p>
           </article>
         </div>
       </div>
@@ -274,35 +263,34 @@
     <section class="screen process-screen">
       <div class="container">
         <div class="section-heading">
-          <p class="section-kicker">Экран 6</p>
-          <h2>Как проходит работа от первой заявки до готового результата</h2>
+          <h2 data-ru="Как проходит работа от заявки до результата" data-ro="Cum decurge lucrul de la cerere pana la rezultat">Как проходит работа от заявки до результата</h2>
         </div>
 
         <div class="timeline">
           <article class="timeline-step">
             <strong>1</strong>
-            <h3>Заявка</h3>
-            <p>Клиент оставляет контакты, адрес и коротко описывает задачу.</p>
+            <h3 data-ru="Заявка" data-ro="Cerere">Заявка</h3>
+            <p data-ru="Оставляете контакты, адрес и коротко описываете задачу." data-ro="Lasati contactele, adresa si descrieti pe scurt problema.">Оставляете контакты, адрес и коротко описываете задачу.</p>
           </article>
           <article class="timeline-step">
             <strong>2</strong>
-            <h3>Уточнение</h3>
-            <p>Согласовываем объём работ, срочность, тип объекта и удобное время выезда.</p>
+            <h3 data-ru="Уточнение" data-ro="Clarificare">Уточнение</h3>
+            <p data-ru="Согласовываем объём работ, срочность и формат выезда." data-ro="Clarificam volumul lucrarilor, urgenta si formatul interventiei.">Согласовываем объём работ, срочность и формат выезда.</p>
           </article>
           <article class="timeline-step">
             <strong>3</strong>
-            <h3>Оценка</h3>
-            <p>Сообщаем ориентир по стоимости и объясняем, что влияет на цену.</p>
+            <h3 data-ru="Оценка" data-ro="Estimare">Оценка</h3>
+            <p data-ru="Даём ориентир по стоимости и объясняем, что влияет на цену." data-ro="Oferim un interval de pret si explicam ce influenteaza costul.">Даём ориентир по стоимости и объясняем, что влияет на цену.</p>
           </article>
           <article class="timeline-step">
             <strong>4</strong>
-            <h3>Выполнение</h3>
-            <p>Работы идут по согласованным этапам, без перегруза клиента техническими деталями.</p>
+            <h3 data-ru="Выполнение" data-ro="Executie">Выполнение</h3>
+            <p data-ru="Работы идут по этапам без перегруза клиента техническими деталями." data-ro="Lucrarile merg pe etape fara a incarca clientul cu detalii tehnice inutile.">Работы идут по этапам без перегруза клиента техническими деталями.</p>
           </article>
           <article class="timeline-step">
             <strong>5</strong>
-            <h3>Сдача</h3>
-            <p>Проверяем результат и оставляем клиенту понятный финальный объём выполненных работ.</p>
+            <h3 data-ru="Сдача" data-ro="Predare">Сдача</h3>
+            <p data-ru="Проверяем итог и оставляем понятный финальный объём выполненных работ." data-ro="Verificam rezultatul si lasam clar ce a fost executat.">Проверяем итог и оставляем понятный финальный объём выполненных работ.</p>
           </article>
         </div>
       </div>
@@ -311,26 +299,25 @@
     <section class="screen dark-screen">
       <div class="container">
         <div class="section-heading light">
-          <p class="section-kicker">Экран 7</p>
-          <h2>Форматы объектов, с которыми удобно работать через единый сервис</h2>
+          <h2 data-ru="С какими объектами удобно работать через единый сервис" data-ro="Tipuri de obiecte potrivite pentru un serviciu unic">С какими объектами удобно работать через единый сервис</h2>
         </div>
 
         <div class="formats-grid">
           <article class="format-card">
-            <h3>Квартиры</h3>
-            <p>Аварийные вызовы, ремонт перед продажей, обновление санузла, кухни или отдельных комнат.</p>
+            <h3 data-ru="Квартиры" data-ro="Apartamente">Квартиры</h3>
+            <p data-ru="Аварийные вызовы, ремонт перед продажей, обновление кухни, санузла и отдельных комнат." data-ro="Interventii urgente, renovare inainte de vanzare, actualizarea bucatariei, baii si camerelor.">Аварийные вызовы, ремонт перед продажей, обновление кухни, санузла и отдельных комнат.</p>
           </article>
           <article class="format-card">
-            <h3>Частные дома</h3>
-            <p>Комбинация инженерных и отделочных задач, где важна координация работ и последовательность этапов.</p>
+            <h3 data-ru="Частные дома" data-ro="Case">Частные дома</h3>
+            <p data-ru="Комбинация инженерных и отделочных задач, где важна координация этапов." data-ro="Combinatie de lucrari tehnice si de finisare unde coordonarea etapelor conteaza mult.">Комбинация инженерных и отделочных задач, где важна координация этапов.</p>
           </article>
           <article class="format-card">
-            <h3>Офисы</h3>
-            <p>Работы с минимальным простоем: электрика, косметика, исправление дефектов и подготовка к запуску.</p>
+            <h3 data-ru="Офисы" data-ro="Birouri">Офисы</h3>
+            <p data-ru="Работы с минимальным простоем: электрика, косметика, исправление дефектов." data-ro="Lucrari cu intrerupere minima: electricitate, improspatare, remedierea defectelor.">Работы с минимальным простоем: электрика, косметика, исправление дефектов.</p>
           </article>
           <article class="format-card">
-            <h3>Арендные объекты</h3>
-            <p>Подготовка помещения к сдаче, быстрые исправления между арендаторами и комплекс мелких задач за один выезд.</p>
+            <h3 data-ru="Арендные объекты" data-ro="Spatii de inchiriat">Арендные объекты</h3>
+            <p data-ru="Подготовка помещения к сдаче и быстрые исправления между арендаторами." data-ro="Pregatirea spatiului pentru inchiriere si corectii rapide intre chiriasi.">Подготовка помещения к сдаче и быстрые исправления между арендаторами.</p>
           </article>
         </div>
       </div>
@@ -339,29 +326,122 @@
     <section class="screen">
       <div class="container split-grid">
         <div class="section-heading">
-          <p class="section-kicker">Экран 8</p>
-          <h2>Что получает клиент в итоге</h2>
-          <p>Этот блок усиливает доверие и снимает сомнения перед заявкой.</p>
+          <h2 data-ru="Что получает клиент в итоге" data-ro="Ce primeste clientul la final">Что получает клиент в итоге</h2>
+          <p data-ru="Этот блок усиливает доверие и помогает человеку легче дойти до заявки." data-ro="Acest bloc intareste increderea si il ajuta pe vizitator sa ajunga mai usor la cerere.">Этот блок усиливает доверие и помогает человеку легче дойти до заявки.</p>
         </div>
 
         <div class="result-grid">
           <article class="result-card">
-            <h3>Собранную задачу</h3>
-            <p>Даже если проблема включает несколько видов работ, клиенту не нужно координировать всё самостоятельно.</p>
+            <h3 data-ru="Собранную задачу" data-ro="Problema organizata">Собранную задачу</h3>
+            <p data-ru="Даже если проблема включает несколько видов работ, клиент не координирует всё сам." data-ro="Chiar daca sunt mai multe tipuri de lucrari, clientul nu trebuie sa coordoneze totul singur.">Даже если проблема включает несколько видов работ, клиент не координирует всё сам.</p>
           </article>
           <article class="result-card">
-            <h3>Чистую логику цены</h3>
-            <p>Ориентир по стоимости понятен заранее, а итог не выглядит случайным.</p>
+            <h3 data-ru="Понятную цену" data-ro="Pret clar">Понятную цену</h3>
+            <p data-ru="Ориентир по стоимости известен заранее, а финальный результат не выглядит случайным." data-ro="Un interval de pret este cunoscut din timp, iar rezultatul final nu pare aleatoriu.">Ориентир по стоимости известен заранее, а финальный результат не выглядит случайным.</p>
           </article>
           <article class="result-card">
-            <h3>Аккуратный визуальный итог</h3>
-            <p>Важно, чтобы после ремонта пространство не только работало, но и выглядело собранно.</p>
+            <h3 data-ru="Аккуратный визуальный итог" data-ro="Rezultat vizual ingrijit">Аккуратный визуальный итог</h3>
+            <p data-ru="После ремонта пространство не только работает, но и выглядит собранно." data-ro="Dupa reparatie, spatiul nu doar functioneaza, ci arata si bine.">После ремонта пространство не только работает, но и выглядит собранно.</p>
           </article>
           <article class="result-card">
-            <h3>Экономию времени</h3>
-            <p>Одна заявка закрывает целый набор бытовых и ремонтных задач без бесконечных созвонов.</p>
+            <h3 data-ru="Экономию времени" data-ro="Economie de timp">Экономию времени</h3>
+            <p data-ru="Одна заявка закрывает набор бытовых и ремонтных задач без лишних созвонов." data-ro="O singura cerere poate inchide mai multe lucrari fara apeluri inutile.">Одна заявка закрывает набор бытовых и ремонтных задач без лишних созвонов.</p>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section class="screen article-screen" id="articles">
+      <div class="container">
+        <div class="section-heading">
+          <h2 data-ru="Полезные статьи по ремонту и бытовому сервису" data-ro="Articole utile despre reparatii si servicii pentru casa">Полезные статьи по ремонту и бытовому сервису</h2>
+          <p data-ru="Этот раздел помогает и SEO, и доверию: пользователь видит экспертность сервиса ещё до заявки." data-ro="Aceasta sectiune ajuta atat SEO-ul, cat si increderea: vizitatorul vede expertiza serviciului inainte de cerere.">Этот раздел помогает и SEO, и доверию: пользователь видит экспертность сервиса ещё до заявки.</p>
+        </div>
+
+        <div class="article-grid">
+          <article class="article-card">
+            <img src="/assets/article-plumbing.svg" alt="Схема сантехнического ремонта в квартире" width="420" height="260" loading="lazy" decoding="async" data-ru-alt="Схема сантехнического ремонта в квартире" data-ro-alt="Schema unei interventii sanitare intr-un apartament" />
+            <div class="article-card-body">
+              <p class="article-tag" data-ru="Сантехника" data-ro="Instalatii sanitare">Сантехника</p>
+              <h3 data-ru="Что делать при протечке и когда вызывать сантехника в Кишиневе" data-ro="Ce faci la o scurgere si cand chemi instalatorul in Chisinau">Что делать при протечке и когда вызывать сантехника в Кишиневе</h3>
+              <p data-ru="Практичная статья с базовой логикой действий, рисками и моментом, когда лучше не тянуть." data-ro="Un articol practic despre pasii de baza, riscuri si momentul in care nu mai trebuie amanat apelul.">Практичная статья с базовой логикой действий, рисками и моментом, когда лучше не тянуть.</p>
+              <a class="text-link" href="#article-plumbing" data-ru="Читать статью" data-ro="Citeste articolul">Читать статью</a>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <img src="/assets/article-electric.svg" alt="Электрик проверяет домашнюю электрику" width="420" height="260" loading="lazy" decoding="async" data-ru-alt="Электрик проверяет домашнюю электрику" data-ro-alt="Electrician verifica reteaua electrica din apartament" />
+            <div class="article-card-body">
+              <p class="article-tag" data-ru="Электрика" data-ro="Electricitate">Электрика</p>
+              <h3 data-ru="5 признаков, что в квартире нужен электрик, а не временное решение" data-ro="5 semne ca ai nevoie de electrician, nu de o solutie temporara">5 признаков, что в квартире нужен электрик, а не временное решение</h3>
+              <p data-ru="Структурированная статья для запросов по электрике, безопасности и бытовым неисправностям." data-ro="Articol structurat pentru cautari despre electricitate, siguranta si defecte casnice.">Структурированная статья для запросов по электрике, безопасности и бытовым неисправностям.</p>
+              <a class="text-link" href="#article-electric" data-ru="Читать статью" data-ro="Citeste articolul">Читать статью</a>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <img src="/assets/article-bathroom.svg" alt="Планирование ремонта ванной комнаты" width="420" height="260" loading="lazy" decoding="async" data-ru-alt="Планирование ремонта ванной комнаты" data-ro-alt="Planificarea renovarii unei bai" />
+            <div class="article-card-body">
+              <p class="article-tag" data-ru="Ремонт ванной" data-ro="Renovare baie">Ремонт ванной</p>
+              <h3 data-ru="Как спланировать ремонт ванной в Кишиневе без хаоса и лишних трат" data-ro="Cum planifici renovarea baii in Chisinau fara haos si cheltuieli inutile">Как спланировать ремонт ванной в Кишиневе без хаоса и лишних трат</h3>
+              <p data-ru="Статья помогает лучше понять этапы, бюджет и приоритеты до старта работ." data-ro="Articolul ajuta sa intelegeti mai bine etapele, bugetul si prioritatile inainte de start.">Статья помогает лучше понять этапы, бюджет и приоритеты до старта работ.</p>
+              <a class="text-link" href="#article-bathroom" data-ru="Читать статью" data-ro="Citeste articolul">Читать статью</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="screen article-detail-screen" id="article-plumbing">
+      <div class="container article-feature">
+        <div class="article-feature-media">
+          <img src="/assets/article-plumbing.svg" alt="Сантехнические работы в квартире" width="560" height="360" loading="lazy" decoding="async" data-ru-alt="Сантехнические работы в квартире" data-ro-alt="Interventie sanitara intr-un apartament" />
+        </div>
+        <article class="article-body">
+          <p class="article-tag" data-ru="Статья: сантехника" data-ro="Articol: instalatii sanitare">Статья: сантехника</p>
+          <h2 data-ru="Что делать при протечке и когда вызывать сантехника в Кишиневе" data-ro="Ce faci la o scurgere si cand chemi instalatorul in Chisinau">Что делать при протечке и когда вызывать сантехника в Кишиневе</h2>
+          <p data-ru="Если течь небольшая, люди часто откладывают вызов мастера. Но в реальности даже слабая протечка быстро приводит к сырости, запаху и повреждению отделки. Первая задача — перекрыть воду, убрать всё, что может намокнуть, и понять, идёт ли проблема от смесителя, сифона, соединения или скрытого участка." data-ro="Cand scurgerea pare mica, multi amana apelul. In realitate, chiar si o scurgere slaba duce rapid la umezeala, miros si deteriorarea finisajelor. Primul pas este sa opriti apa, sa eliberati zona si sa intelegeti daca problema vine de la baterie, sifon, conexiune sau dintr-o zona ascunsa.">Если течь небольшая, люди часто откладывают вызов мастера. Но в реальности даже слабая протечка быстро приводит к сырости, запаху и повреждению отделки. Первая задача — перекрыть воду, убрать всё, что может намокнуть, и понять, идёт ли проблема от смесителя, сифона, соединения или скрытого участка.</p>
+          <h3 data-ru="Когда можно подождать несколько часов" data-ro="Cand poti astepta cateva ore">Когда можно подождать несколько часов</h3>
+          <p data-ru="Если вода перекрыта, течь локализована, а помещение не страдает, можно спокойно отправить заявку и описать ситуацию. Это поможет заранее подготовить правильный объём работ и материалы." data-ro="Daca apa este oprita, scurgerea este localizata si incaperea nu este afectata, puteti trimite cererea linistit si descrie situatia. Astfel este mai usor sa fie pregatite corect lucrarile si materialele.">Если вода перекрыта, течь локализована, а помещение не страдает, можно спокойно отправить заявку и описать ситуацию. Это поможет заранее подготовить правильный объём работ и материалы.</p>
+          <h3 data-ru="Когда тянуть уже нельзя" data-ro="Cand nu mai trebuie amanat">Когда тянуть уже нельзя</h3>
+          <p data-ru="Если вода продолжает идти, мокнут стены или пол, появляется риск затопления соседей или неясно, где именно источник, лучше вызывать сантехника как можно быстрее. Для таких случаев и нужен быстрый сервисный отклик." data-ro="Daca apa continua sa curga, peretii sau podeaua se uda, exista risc pentru vecini sau nu este clar de unde vine problema, este mai bine sa chemati instalatorul cat mai repede. Exact pentru astfel de cazuri este util un raspuns rapid al serviciului.">Если вода продолжает идти, мокнут стены или пол, появляется риск затопления соседей или неясно, где именно источник, лучше вызывать сантехника как можно быстрее. Для таких случаев и нужен быстрый сервисный отклик.</p>
+          <a class="btn article-cta" href="#contact" data-ru="Связаться по сантехнической задаче" data-ro="Contact pentru problema sanitara">Связаться по сантехнической задаче</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="screen article-detail-screen">
+      <div class="container article-feature article-feature-reverse" id="article-electric">
+        <article class="article-body">
+          <p class="article-tag" data-ru="Статья: электрика" data-ro="Articol: electricitate">Статья: электрика</p>
+          <h2 data-ru="5 признаков, что в квартире нужен электрик, а не временное решение" data-ro="5 semne ca ai nevoie de electrician, nu de o solutie temporara">5 признаков, что в квартире нужен электрик, а не временное решение</h2>
+          <p data-ru="Чаще всего опасные электрические проблемы начинаются с мелочей: мигает свет, греется розетка, срабатывает автомат, появляется запах пластика. Такие симптомы не стоит закрывать удлинителем, изолентой или привычкой просто не включать проблемную точку." data-ro="Problemele electrice periculoase incep de obicei cu lucruri aparent mici: lumina clipeste, priza se incalzeste, siguranta cade sau apare miros de plastic. Astfel de semne nu trebuie mascate cu prelungitoare, banda izolatoare sau obiceiul de a evita punctul problematic.">Чаще всего опасные электрические проблемы начинаются с мелочей: мигает свет, греется розетка, срабатывает автомат, появляется запах пластика. Такие симптомы не стоит закрывать удлинителем, изолентой или привычкой просто не включать проблемную точку.</p>
+          <h3 data-ru="На что обратить внимание" data-ro="La ce sa fii atent">На что обратить внимание</h3>
+          <p data-ru="Если проблема повторяется, затрагивает несколько точек или усиливается при нагрузке, значит нужен осмотр электрика. Особенно это важно в старом фонде и в квартирах после частичных ремонтов, где сеть часто собрана неоднородно." data-ro="Daca problema se repeta, afecteaza mai multe puncte sau se accentueaza la sarcina, este nevoie de verificarea unui electrician. Acest lucru este important mai ales in fondul locativ vechi si in apartamentele unde au existat reparatii partiale.">Если проблема повторяется, затрагивает несколько точек или усиливается при нагрузке, значит нужен осмотр электрика. Особенно это важно в старом фонде и в квартирах после частичных ремонтов, где сеть часто собрана неоднородно.</p>
+          <h3 data-ru="Что лучше не делать самостоятельно" data-ro="Ce este mai bine sa nu faci singur">Что лучше не делать самостоятельно</h3>
+          <p data-ru="Не стоит разбирать щиток без понимания схемы, менять автоматы “на глаз” или соединять провода без диагностики. Безопаснее и дешевле решить проблему один раз правильно, чем потом устранять последствия короткого замыкания." data-ro="Nu este bine sa deschideti tabloul fara a intelege schema, sa schimbati sigurantele la intamplare sau sa uniti fire fara diagnostic. Este mai sigur si mai ieftin sa rezolvati problema corect o singura data decat sa reparati consecintele unui scurtcircuit.">Не стоит разбирать щиток без понимания схемы, менять автоматы “на глаз” или соединять провода без диагностики. Безопаснее и дешевле решить проблему один раз правильно, чем потом устранять последствия короткого замыкания.</p>
+          <a class="btn article-cta" href="#contact" data-ru="Связаться по электрике" data-ro="Contact pentru electricitate">Связаться по электрике</a>
+        </article>
+        <div class="article-feature-media">
+          <img src="/assets/article-electric.svg" alt="Диагностика домашней электрики" width="560" height="360" loading="lazy" decoding="async" data-ru-alt="Диагностика домашней электрики" data-ro-alt="Diagnosticarea retelei electrice de acasa" />
+        </div>
+      </div>
+    </section>
+
+    <section class="screen article-detail-screen" id="article-bathroom">
+      <div class="container article-feature">
+        <div class="article-feature-media">
+          <img src="/assets/article-bathroom.svg" alt="План ремонта ванной комнаты" width="560" height="360" loading="lazy" decoding="async" data-ru-alt="План ремонта ванной комнаты" data-ro-alt="Planul renovarii unei bai" />
+        </div>
+        <article class="article-body">
+          <p class="article-tag" data-ru="Статья: ремонт ванной" data-ro="Articol: renovare baie">Статья: ремонт ванной</p>
+          <h2 data-ru="Как спланировать ремонт ванной в Кишиневе без хаоса и лишних трат" data-ro="Cum planifici renovarea baii in Chisinau fara haos si cheltuieli inutile">Как спланировать ремонт ванной в Кишиневе без хаоса и лишних трат</h2>
+          <p data-ru="Самая частая ошибка — начинать ремонт ванной с выбора плитки, не разобравшись с сантехникой, геометрией, вентиляцией и состоянием оснований. В итоге красивый выбор материалов не спасает от переделок и сдвига сроков." data-ro="Cea mai frecventa greseala este sa incepeti renovarea baii cu alegerea faiantei fara sa clarificati instalatiile, geometria, ventilatia si starea suporturilor. In final, materialele frumoase nu salveaza proiectul de refaceri si intarzieri.">Самая частая ошибка — начинать ремонт ванной с выбора плитки, не разобравшись с сантехникой, геометрией, вентиляцией и состоянием оснований. В итоге красивый выбор материалов не спасает от переделок и сдвига сроков.</p>
+          <h3 data-ru="Правильный порядок" data-ro="Ordinea corecta">Правильный порядок</h3>
+          <p data-ru="Сначала оценивают коммуникации и объём демонтажа, затем формируют схему работ и только после этого финализируют материалы. Такой подход помогает избежать лишних покупок и конфликтов между этапами." data-ro="Mai intai se evalueaza comunicatiile si volumul de demontare, apoi se formeaza schema lucrarilor si abia dupa aceea se finalizeaza materialele. Aceasta abordare reduce cheltuielile inutile si conflictele intre etape.">Сначала оценивают коммуникации и объём демонтажа, затем формируют схему работ и только после этого финализируют материалы. Такой подход помогает избежать лишних покупок и конфликтов между этапами.</p>
+          <h3 data-ru="Что важно обсудить до старта" data-ro="Ce trebuie discutat inainte de start">Что важно обсудить до старта</h3>
+          <p data-ru="Сроки, очередность процессов, доступ к объекту, перечень скрытых рисков и ориентир по смете. Когда это обсуждено заранее, ремонт идёт спокойнее и понятнее для клиента." data-ro="Termenele, ordinea proceselor, accesul la obiect, lista riscurilor ascunse si un reper de deviz. Cand aceste lucruri sunt discutate din timp, renovarea merge mai calm si mai clar pentru client.">Сроки, очередность процессов, доступ к объекту, перечень скрытых рисков и ориентир по смете. Когда это обсуждено заранее, ремонт идёт спокойнее и понятнее для клиента.</p>
+          <a class="btn article-cta" href="#contact" data-ru="Обсудить ремонт ванной" data-ro="Discutam renovarea baii">Обсудить ремонт ванной</a>
+        </article>
       </div>
     </section>
 
@@ -369,45 +449,38 @@
       <div class="container split-grid">
         <div>
           <div class="section-heading">
-            <p class="section-kicker">Экран 9</p>
-            <h2>Быстрый калькулятор предварительной стоимости</h2>
-            <p>
-              Калькулятор не перегружает страницу скриптами, но помогает человеку сразу сориентироваться и
-              психологически приближает к отправке заявки.
-            </p>
+            <h2 data-ru="Быстрый калькулятор предварительной стоимости" data-ro="Calculator rapid pentru estimarea costului">Быстрый калькулятор предварительной стоимости</h2>
+            <p data-ru="Лёгкий калькулятор помогает человеку быстро сориентироваться и не перегружает страницу лишним JavaScript." data-ro="Un calculator usor il ajuta pe vizitator sa se orienteze rapid fara a incarca pagina cu JavaScript inutil.">Лёгкий калькулятор помогает человеку быстро сориентироваться и не перегружает страницу лишним JavaScript.</p>
           </div>
 
           <form class="calc-card" id="calcForm">
-            <label for="qService">Направление работ</label>
+            <label for="qService" data-ru="Направление работ" data-ro="Tipul lucrarii">Направление работ</label>
             <select id="qService" name="serviceType">
-              <option value="plumbing">Сантехника</option>
-              <option value="electrical">Электрика</option>
-              <option value="tiling">Плитка</option>
-              <option value="finishing">Отделка</option>
-              <option value="handyman">Мелкий бытовой сервис</option>
+              <option value="plumbing" data-ru="Сантехника" data-ro="Instalatii sanitare">Сантехника</option>
+              <option value="electrical" data-ru="Электрика" data-ro="Electricitate">Электрика</option>
+              <option value="tiling" data-ru="Плитка" data-ro="Faianta">Плитка</option>
+              <option value="finishing" data-ru="Отделка" data-ro="Finisaje">Отделка</option>
+              <option value="handyman" data-ru="Мелкий бытовой сервис" data-ro="Servicii mici pentru casa">Мелкий бытовой сервис</option>
             </select>
 
-            <label for="qAmount">Объём: точки, м² или погонные метры</label>
+            <label for="qAmount" data-ru="Объём: точки, м² или погонные метры" data-ro="Volum: puncte, m² sau metri liniari">Объём: точки, м² или погонные метры</label>
             <input id="qAmount" type="number" min="1" value="10" inputmode="numeric" />
 
             <label class="checkbox-row" for="qUrgent">
               <input id="qUrgent" type="checkbox" />
-              <span>Срочный выезд</span>
+              <span data-ru="Срочный выезд" data-ro="Interventie urgenta">Срочный выезд</span>
             </label>
 
-            <button id="calcBtn" class="btn" type="button">Рассчитать</button>
+            <button id="calcBtn" class="btn" type="button" data-ru="Рассчитать" data-ro="Calculeaza">Рассчитать</button>
             <p id="calcResult" class="result" aria-live="polite"></p>
-            <p class="fine-print">Это ориентир для первого контакта. Точный расчёт зависит от состояния объекта и деталей задачи.</p>
+            <p class="fine-print" data-ru="Это ориентир для первого контакта. Точный расчёт зависит от состояния объекта и деталей задачи." data-ro="Acesta este un reper pentru primul contact. Calculul exact depinde de starea obiectului si de detaliile lucrarii.">Это ориентир для первого контакта. Точный расчёт зависит от состояния объекта и деталей задачи.</p>
           </form>
         </div>
 
         <aside class="seo-card">
-          <p class="callout-label">SEO-фокус</p>
-          <h3>Страница отвечает на запросы вроде “ремонт в Кишиневе”, “сантехник Кишинев” и “электрик на дом”</h3>
-          <p>
-            В структуре есть семантические разделы, локальные упоминания города и районов, отдельные блоки услуг,
-            преимущества, FAQ и форма заявки. Это помогает и поисковым системам, и реальным людям.
-          </p>
+          <p class="callout-label" data-ru="SEO-фокус" data-ro="Focus SEO">SEO-фокус</p>
+          <h3 data-ru="Сайт отвечает на запросы по ремонту, сантехнику, электрику и локальным услугам в Кишиневе" data-ro="Site-ul raspunde cautarilor despre reparatii, instalator, electrician si servicii locale in Chisinau">Сайт отвечает на запросы по ремонту, сантехнику, электрику и локальным услугам в Кишиневе</h3>
+          <p data-ru="В структуре уже есть семантические разделы, локальные упоминания города, отдельные блоки услуг, FAQ, форма заявки и статьи для дополнительного органического трафика." data-ro="Structura include deja sectiuni semantice, mentiuni locale despre oras, blocuri separate de servicii, FAQ, formular si articole pentru trafic organic suplimentar.">В структуре уже есть семантические разделы, локальные упоминания города, отдельные блоки услуг, FAQ, форма заявки и статьи для дополнительного органического трафика.</p>
         </aside>
       </div>
     </section>
@@ -415,61 +488,53 @@
     <section class="screen accent-screen">
       <div class="container">
         <div class="section-heading">
-          <p class="section-kicker">Экран 10</p>
-          <h2>Где работает сервис</h2>
-          <p>
-            Раздел под локальное SEO: полезен для запросов по районам и помогает пользователю быстро понять зону
-            обслуживания.
-          </p>
+          <h2 data-ru="Где работает сервис" data-ro="Unde lucreaza serviciul">Где работает сервис</h2>
+          <p data-ru="Раздел полезен и для локального SEO, и для человека, который сразу хочет понять зону обслуживания." data-ro="Sectiunea este utila atat pentru SEO local, cat si pentru vizitatorul care vrea sa inteleaga rapid zona de lucru.">Раздел полезен и для локального SEO, и для человека, который сразу хочет понять зону обслуживания.</p>
         </div>
 
         <div class="areas-grid">
-          <span>Центр</span>
-          <span>Ботаника</span>
-          <span>Буюканы</span>
-          <span>Рышкановка</span>
-          <span>Чеканы</span>
-          <span>Телецентр</span>
-          <span>Дурлешты</span>
-          <span>Кодру</span>
-          <span>Ставчены</span>
-          <span>Бачой</span>
+          <span data-ru="Центр" data-ro="Centru">Центр</span>
+          <span data-ru="Ботаника" data-ro="Botanica">Ботаника</span>
+          <span data-ru="Буюканы" data-ro="Buiucani">Буюканы</span>
+          <span data-ru="Рышкановка" data-ro="Riscani">Рышкановка</span>
+          <span data-ru="Чеканы" data-ro="Ciocana">Чеканы</span>
+          <span data-ru="Телецентр" data-ro="Telecentru">Телецентр</span>
+          <span data-ru="Дурлешты" data-ro="Durlesti">Дурлешты</span>
+          <span data-ru="Кодру" data-ro="Codru">Кодру</span>
+          <span data-ru="Ставчены" data-ro="Stauceni">Ставчены</span>
+          <span data-ru="Бачой" data-ro="Bacioi">Бачой</span>
         </div>
 
-        <p class="area-note">
-          Если объект находится рядом с Кишиневом, заявку всё равно стоит оставить: многие адреса в пригородах также
-          удобно обслуживать.
-        </p>
+        <p class="area-note" data-ru="Если объект рядом с Кишиневом, заявку всё равно стоит оставить: многие адреса в пригородах тоже удобно обслуживать." data-ro="Daca obiectul este aproape de Chisinau, merita sa lasati cererea: multe adrese din suburbii sunt de asemenea convenabile pentru interventie.">Если объект рядом с Кишиневом, заявку всё равно стоит оставить: многие адреса в пригородах тоже удобно обслуживать.</p>
       </div>
     </section>
 
     <section class="screen faq-screen" id="faq">
       <div class="container">
         <div class="section-heading">
-          <p class="section-kicker">Экран 11</p>
-          <h2>Частые вопросы перед заказом ремонта или выезда мастера</h2>
+          <h2 data-ru="Частые вопросы перед заказом ремонта или выезда мастера" data-ro="Intrebari frecvente inainte de a comanda reparatia sau interventia mesterului">Частые вопросы перед заказом ремонта или выезда мастера</h2>
         </div>
 
         <div class="faq-list">
           <details>
-            <summary>Можно ли вызвать мастера срочно?</summary>
-            <p>Да. Для срочных случаев предусмотрен ускоренный выезд, если есть свободное окно по текущей загрузке.</p>
+            <summary data-ru="Можно ли вызвать мастера срочно?" data-ro="Se poate chema mesterul urgent?">Можно ли вызвать мастера срочно?</summary>
+            <p data-ru="Да. Для срочных случаев предусмотрен ускоренный выезд, если есть свободное окно по текущей загрузке." data-ro="Da. Pentru cazurile urgente este posibila interventia rapida, daca exista un interval liber in program.">Да. Для срочных случаев предусмотрен ускоренный выезд, если есть свободное окно по текущей загрузке.</p>
           </details>
           <details>
-            <summary>Вы берёте мелкие задачи или только крупный ремонт?</summary>
-            <p>Да, сервис подходит и для точечных бытовых задач, и для комплексных работ по квартире, дому или офису.</p>
+            <summary data-ru="Вы берёте мелкие задачи или только крупный ремонт?" data-ro="Preluati lucrari mici sau doar renovari mari?">Вы берёте мелкие задачи или только крупный ремонт?</summary>
+            <p data-ru="Сервис подходит и для точечных бытовых задач, и для комплексных работ по квартире, дому или офису." data-ro="Serviciul este potrivit atat pentru sarcini mici, cat si pentru lucrari complexe in apartament, casa sau birou.">Сервис подходит и для точечных бытовых задач, и для комплексных работ по квартире, дому или офису.</p>
           </details>
           <details>
-            <summary>Как формируется цена?</summary>
-            <p>Цена зависит от типа работ, объёма, сложности доступа, срочности и текущего состояния объекта.</p>
+            <summary data-ru="Как формируется цена?" data-ro="Cum se formeaza pretul?">Как формируется цена?</summary>
+            <p data-ru="Цена зависит от типа работ, объёма, сложности доступа, срочности и текущего состояния объекта." data-ro="Pretul depinde de tipul lucrarii, volum, acces, urgenta si starea actuala a obiectului.">Цена зависит от типа работ, объёма, сложности доступа, срочности и текущего состояния объекта.</p>
           </details>
           <details>
-            <summary>Можно ли описать задачу без технических терминов?</summary>
-            <p>Да. Достаточно объяснить проблему простыми словами: что не работает, где находится и что нужно получить в итоге.</p>
+            <summary data-ru="Можно ли описать задачу без технических терминов?" data-ro="Pot descrie problema fara termeni tehnici?">Можно ли описать задачу без технических терминов?</summary>
+            <p data-ru="Да. Достаточно объяснить простыми словами, что не работает, где это находится и какой результат нужен." data-ro="Da. Este suficient sa explicati simplu ce nu functioneaza, unde se afla si ce rezultat doriti.">Да. Достаточно объяснить простыми словами, что не работает, где это находится и какой результат нужен.</p>
           </details>
           <details>
-            <summary>С какими объектами вы работаете?</summary>
-            <p>С квартирами, домами, офисами, небольшими коммерческими помещениями и объектами под аренду.</p>
+            <summary data-ru="С какими объектами вы работаете?" data-ro="Cu ce tipuri de obiecte lucrati?">С какими объектами вы работаете?</summary>
+            <p data-ru="С квартирами, домами, офисами, небольшими коммерческими помещениями и объектами под аренду." data-ro="Cu apartamente, case, birouri, mici spatii comerciale si obiecte pentru inchiriere.">С квартирами, домами, офисами, небольшими коммерческими помещениями и объектами под аренду.</p>
           </details>
         </div>
       </div>
@@ -479,50 +544,41 @@
       <div class="container contact-grid">
         <div class="contact-copy">
           <div class="section-heading">
-            <p class="section-kicker">Экран 12</p>
-            <h2>Оставьте заявку и получите понятный следующий шаг по вашей задаче</h2>
-            <p>
-              Чем точнее описание, тем быстрее можно оценить выезд, приоритет и предварительную стоимость. Форма простая
-              и не мешает конверсии.
-            </p>
+            <h2 data-ru="Оставьте заявку и получите понятный следующий шаг по вашей задаче" data-ro="Lasati cererea si primiti un pas clar pentru rezolvarea lucrarii">Оставьте заявку и получите понятный следующий шаг по вашей задаче</h2>
+            <p data-ru="Чем точнее описание, тем быстрее можно оценить выезд, приоритет и предварительную стоимость." data-ro="Cu cat descrierea este mai precisa, cu atat mai rapid putem estima interventia, prioritatea si costul orientativ.">Чем точнее описание, тем быстрее можно оценить выезд, приоритет и предварительную стоимость.</p>
           </div>
 
           <ul class="contact-points">
-            <li>Подходит для срочных и плановых работ</li>
-            <li>Можно описать задачу обычным языком</li>
-            <li>Заявка уходит напрямую в обработку</li>
+            <li data-ru="Подходит для срочных и плановых работ" data-ro="Potrivit pentru lucrari urgente si planificate">Подходит для срочных и плановых работ</li>
+            <li data-ru="Можно описать задачу обычным языком" data-ro="Puteti descrie problema in limbaj simplu">Можно описать задачу обычным языком</li>
+            <li data-ru="Заявка уходит напрямую в обработку" data-ro="Cererea merge direct in procesare">Заявка уходит напрямую в обработку</li>
           </ul>
         </div>
 
         <form id="leadForm" class="lead-form">
-          <label for="name">Имя</label>
-          <input id="name" required name="name" autocomplete="name" placeholder="Как к вам обращаться" />
+          <label for="name" data-ru="Имя" data-ro="Nume">Имя</label>
+          <input id="name" required name="name" autocomplete="name" placeholder="Как к вам обращаться" data-ru-placeholder="Как к вам обращаться" data-ro-placeholder="Cum sa va spunem" />
 
-          <label for="phone">Телефон</label>
-          <input id="phone" required name="phone" autocomplete="tel" placeholder="+373 ..." />
+          <label for="phone" data-ru="Телефон" data-ro="Telefon">Телефон</label>
+          <input id="phone" required name="phone" autocomplete="tel" placeholder="+373 ..." data-ru-placeholder="+373 ..." data-ro-placeholder="+373 ..." />
 
-          <label for="address">Адрес</label>
-          <input id="address" required name="address" autocomplete="street-address" placeholder="Район, улица, ориентир" />
+          <label for="address" data-ru="Адрес" data-ro="Adresa">Адрес</label>
+          <input id="address" required name="address" autocomplete="street-address" placeholder="Район, улица, ориентир" data-ru-placeholder="Район, улица, ориентир" data-ro-placeholder="Sector, strada, reper" />
 
-          <label for="contactService">Услуга</label>
+          <label for="contactService" data-ru="Услуга" data-ro="Serviciu">Услуга</label>
           <select id="contactService" name="service" required>
-            <option value="Сантехника">Сантехника</option>
-            <option value="Электрика">Электрика</option>
-            <option value="Плитка">Плитка</option>
-            <option value="Отделка">Отделка</option>
-            <option value="Мелкий бытовой сервис">Мелкий бытовой сервис</option>
-            <option value="Комплексный ремонт">Комплексный ремонт</option>
+            <option value="plumbing" data-ru="Сантехника" data-ro="Instalatii sanitare">Сантехника</option>
+            <option value="electrical" data-ru="Электрика" data-ro="Electricitate">Электрика</option>
+            <option value="tiling" data-ru="Плитка" data-ro="Faianta">Плитка</option>
+            <option value="finishing" data-ru="Отделка" data-ro="Finisaje">Отделка</option>
+            <option value="handyman" data-ru="Мелкий бытовой сервис" data-ro="Servicii mici pentru casa">Мелкий бытовой сервис</option>
+            <option value="complex" data-ru="Комплексный ремонт" data-ro="Renovare complexa">Комплексный ремонт</option>
           </select>
 
-          <label for="description">Описание задачи</label>
-          <textarea
-            id="description"
-            name="description"
-            rows="5"
-            placeholder="Что случилось, что нужно сделать, насколько срочно и когда удобно принять мастера"
-          ></textarea>
+          <label for="description" data-ru="Описание задачи" data-ro="Descrierea lucrarii">Описание задачи</label>
+          <textarea id="description" name="description" rows="5" placeholder="Что случилось, что нужно сделать, насколько срочно и когда удобно принять мастера" data-ru-placeholder="Что случилось, что нужно сделать, насколько срочно и когда удобно принять мастера" data-ro-placeholder="Ce s-a intamplat, ce trebuie facut, cat de urgent este si cand puteti primi mesterul"></textarea>
 
-          <button id="submitBtn" class="btn" type="submit">Отправить заявку</button>
+          <button id="submitBtn" class="btn" type="submit" data-ru="Отправить заявку" data-ro="Trimite cererea">Отправить заявку</button>
           <p id="formStatus" class="status" aria-live="polite"></p>
         </form>
       </div>
@@ -532,7 +588,7 @@
   <footer class="site-footer">
     <div class="container footer-row">
       <p>Repair24/7</p>
-      <p>Лендинг сервиса ремонта и бытовых услуг в Кишиневе с SEO-структурой и быстрой загрузкой.</p>
+      <p data-ru="Двуязычный лендинг сервиса ремонта и бытовых услуг в Кишиневе с SEO-структурой, статьями и быстрой загрузкой." data-ro="Landing bilingv pentru servicii de reparatii in Chisinau, cu structura SEO, articole si incarcare rapida.">Двуязычный лендинг сервиса ремонта и бытовых услуг в Кишиневе с SEO-структурой, статьями и быстрой загрузкой.</p>
     </div>
   </footer>
 
