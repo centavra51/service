@@ -3,62 +3,538 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ремонт в Кишиневе 24/7 | Сантехник, электрик, плиточник</title>
+  <title>Ремонт и бытовой сервис в Кишиневе 24/7 | Сантехник, электрик, отделка</title>
   <meta
     name="description"
-    content="Ремонт в Кишиневе 24/7: сантехник, электрик, плиточник и другие работы. Быстрый выезд и честная смета."
+    content="Сервис ремонта в Кишиневе и пригородах: сантехник, электрик, плитка, отделка, срочный выезд и понятная смета. Оставьте заявку на ремонт квартиры, дома или офиса."
   />
+  <meta
+    name="keywords"
+    content="ремонт Кишинев, сантехник Кишинев, электрик Кишинев, ремонт квартиры Кишинев, бытовой сервис"
+  />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="preload" href="/assets/hero-service.svg" as="image" type="image/svg+xml" />
   <link rel="stylesheet" href="/style.css" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Repair24/7",
+      "description": "Сервис ремонта и бытовых услуг в Кишиневе и пригородах: сантехника, электрика, плитка, отделка, мелкий и срочный ремонт.",
+      "areaServed": [
+        "Кишинев",
+        "Буюканы",
+        "Ботаника",
+        "Рышкановка",
+        "Чеканы",
+        "Телецентр",
+        "Дурлешты",
+        "Кодру"
+      ],
+      "serviceType": [
+        "Сантехнические работы",
+        "Электромонтаж",
+        "Плиточные работы",
+        "Косметический ремонт",
+        "Мелкий бытовой ремонт"
+      ],
+      "priceRange": "$$",
+      "availableLanguage": [
+        "ru",
+        "ro"
+      ]
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Можно ли вызвать мастера срочно?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Для срочных случаев предусмотрен ускоренный выезд, если есть свободное окно по текущей загрузке."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Вы берёте мелкие задачи или только крупный ремонт?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Сервис подходит и для точечных бытовых задач, и для комплексных работ по квартире, дому или офису."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как формируется цена?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Цена зависит от типа работ, объёма, сложности доступа, срочности и текущего состояния объекта."
+          }
+        }
+      ]
+    }
+  </script>
 </head>
 <body>
-  <header class="container header">
-    <strong class="brand">Repair24/7</strong>
-    <button id="langToggle" class="btn-outline" type="button" aria-label="Switch language">RO</button>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="#top" aria-label="Repair24/7">
+        <span class="brand-mark">R</span>
+        <span class="brand-copy">
+          <strong>Repair24/7</strong>
+          <small>ремонт и бытовой сервис в Кишиневе</small>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Навигация по лендингу">
+        <a href="#services">Услуги</a>
+        <a href="#benefits">Преимущества</a>
+        <a href="#calculator">Калькулятор</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Заявка</a>
+      </nav>
+
+      <a class="btn btn-small" href="#contact">Оставить заявку</a>
+    </div>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <p class="eyebrow" data-i18n="eyebrow">Кишинев и пригород</p>
-      <h1 data-i18n="hero">Мы ваша команда ремонта в Кишиневе: услуги 24/7</h1>
-      <p data-i18n="sub">
-        Сантехника, электрика, плитка, покраска, полы. Быстрый выезд и честная смета.
-      </p>
-      <a class="btn" href="#contact" data-i18n="cta">Оставить заявку</a>
+  <main>
+    <section class="screen hero-screen" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Кишинев и пригороды, 24/7</p>
+          <h1>Один сервис для ремонта квартиры, дома и офиса без хаоса, задержек и скрытых работ</h1>
+          <p class="hero-text">
+            Берём на себя сантехнику, электрику, плитку, отделку и мелкий бытовой ремонт.
+            Помогаем быстро закрыть аварийную задачу и аккуратно довести до результата плановые работы.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn" href="#contact">Получить расчёт</a>
+            <a class="btn btn-ghost" href="#services">Посмотреть услуги</a>
+          </div>
+
+          <ul class="hero-points" aria-label="Ключевые преимущества">
+            <li>Смета до начала работ</li>
+            <li>Чёткие этапы и понятная коммуникация</li>
+            <li>Выезд по Кишиневу и ближайшим пригородам</li>
+          </ul>
+        </div>
+
+        <div class="hero-media">
+          <div class="hero-image-frame">
+            <img
+              src="/assets/hero-service.svg"
+              alt="Мастер бытового сервиса выполняет ремонт в современной квартире"
+              width="720"
+              height="640"
+              fetchpriority="high"
+              decoding="async"
+            />
+          </div>
+          <div class="hero-note">
+            <strong>Сервисный подход</strong>
+            <p>Не просто мастер на вызов, а единая точка входа для бытовых и ремонтных задач.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="grid">
-      <article>
-        <h2 data-i18n="quiz">Калькулятор стоимости</h2>
-        <div class="card">
-          <label for="qService" data-i18n="service">Тип услуги</label>
-          <select id="qService" name="serviceType">
-            <option value="plumbing" data-i18n-option="plumbing">Сантехника</option>
-            <option value="electrical" data-i18n-option="electrical">Электрика</option>
-            <option value="tiling" data-i18n-option="tiling">Плитка</option>
+    <section class="screen stat-screen">
+      <div class="container">
+        <div class="section-heading compact">
+          <p class="section-kicker">Экран 2</p>
+          <h2>Лендинг сразу отвечает на основные вопросы клиента</h2>
+        </div>
+        <div class="stats-grid">
+          <article class="stat-card">
+            <strong>24/7</strong>
+            <p>Принимаем срочные заявки, когда нужен быстрый выезд мастера.</p>
+          </article>
+          <article class="stat-card">
+            <strong>5 направлений</strong>
+            <p>Сантехника, электрика, плитка, отделка и мелкий бытовой сервис.</p>
+          </article>
+          <article class="stat-card">
+            <strong>1 подрядчик</strong>
+            <p>Клиенту не нужно собирать разных специалистов под одну задачу.</p>
+          </article>
+          <article class="stat-card">
+            <strong>0 лишнего веса</strong>
+            <p>Страница без тяжёлых библиотек и внешних шрифтов для быстрой загрузки.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Экран 3</p>
+          <h2>Услуги сервиса, которые закрывают большинство бытовых и ремонтных задач</h2>
+          <p>
+            Структура раздела помогает SEO: отдельные карточки с ключевыми категориями услуг и понятным описанием
+            того, что получает клиент.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <span>01</span>
+            <h3>Сантехнические работы</h3>
+            <p>Устранение протечек, замена смесителей, сифонов, труб, подключение сантехники и диагностика проблем.</p>
+          </article>
+          <article class="service-card">
+            <span>02</span>
+            <h3>Электрика</h3>
+            <p>Розетки, автоматы, освещение, поиск неисправностей, установка техники и мелкий электромонтаж.</p>
+          </article>
+          <article class="service-card">
+            <span>03</span>
+            <h3>Плитка и санузлы</h3>
+            <p>Подготовка оснований, укладка плитки, затирка, локальный ремонт и аккуратная доводка сложных зон.</p>
+          </article>
+          <article class="service-card">
+            <span>04</span>
+            <h3>Косметический ремонт</h3>
+            <p>Шпаклёвка, покраска, обновление стен и потолков, локальная отделка после аварий и износа.</p>
+          </article>
+          <article class="service-card">
+            <span>05</span>
+            <h3>Мелкий бытовой сервис</h3>
+            <p>Сборка, крепления, замена фурнитуры, карнизы, полки, герметизация и мелкие доработки по дому.</p>
+          </article>
+          <article class="service-card">
+            <span>06</span>
+            <h3>Комплексные задачи</h3>
+            <p>Когда нужно не одно действие, а несколько этапов: от диагностики до полной сдачи готового результата.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen accent-screen">
+      <div class="container split-grid">
+        <div>
+          <div class="section-heading">
+            <p class="section-kicker">Экран 4</p>
+            <h2>Когда этот сервис особенно полезен</h2>
+          </div>
+          <ul class="feature-list">
+            <li>Нужно срочно решить проблему в ванной, кухне или щитке.</li>
+            <li>После арендаторов или перед заселением нужен быстрый косметический апгрейд.</li>
+            <li>Есть список мелких задач, которые никто не хочет брать в комплексе.</li>
+            <li>Нужен один ответственный подрядчик вместо нескольких контактов и хаотичных договорённостей.</li>
+          </ul>
+        </div>
+
+        <aside class="callout-card">
+          <p class="callout-label">Типовой запрос</p>
+          <h3>“Нам нужно, чтобы всё заработало и выглядело аккуратно уже на этой неделе”</h3>
+          <p>
+            Именно под такие запросы и построен сервис: быстро оценить ситуацию, предложить этапы и довести работу до
+            понятного результата.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="screen" id="benefits">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Экран 5</p>
+          <h2>Почему клиенты выбирают сервисный формат, а не случайного мастера из объявления</h2>
+        </div>
+
+        <div class="benefits-grid">
+          <article class="benefit-card">
+            <h3>Понятный объём работ</h3>
+            <p>Клиент понимает, что именно будет сделано, в каком порядке и за что он платит.</p>
+          </article>
+          <article class="benefit-card">
+            <h3>Нормальная коммуникация</h3>
+            <p>Без пропавших звонков, неясных сроков и внезапно выросшего списка “обязательных” допработ.</p>
+          </article>
+          <article class="benefit-card">
+            <h3>Акцент на результате</h3>
+            <p>Важно не просто закрыть задачу, а оставить пространство исправным, аккуратным и готовым к использованию.</p>
+          </article>
+          <article class="benefit-card">
+            <h3>Подходит для частных и бизнес-заказчиков</h3>
+            <p>Квартиры, дома, офисы, объекты аренды, небольшие коммерческие помещения.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen process-screen">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Экран 6</p>
+          <h2>Как проходит работа от первой заявки до готового результата</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-step">
+            <strong>1</strong>
+            <h3>Заявка</h3>
+            <p>Клиент оставляет контакты, адрес и коротко описывает задачу.</p>
+          </article>
+          <article class="timeline-step">
+            <strong>2</strong>
+            <h3>Уточнение</h3>
+            <p>Согласовываем объём работ, срочность, тип объекта и удобное время выезда.</p>
+          </article>
+          <article class="timeline-step">
+            <strong>3</strong>
+            <h3>Оценка</h3>
+            <p>Сообщаем ориентир по стоимости и объясняем, что влияет на цену.</p>
+          </article>
+          <article class="timeline-step">
+            <strong>4</strong>
+            <h3>Выполнение</h3>
+            <p>Работы идут по согласованным этапам, без перегруза клиента техническими деталями.</p>
+          </article>
+          <article class="timeline-step">
+            <strong>5</strong>
+            <h3>Сдача</h3>
+            <p>Проверяем результат и оставляем клиенту понятный финальный объём выполненных работ.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen dark-screen">
+      <div class="container">
+        <div class="section-heading light">
+          <p class="section-kicker">Экран 7</p>
+          <h2>Форматы объектов, с которыми удобно работать через единый сервис</h2>
+        </div>
+
+        <div class="formats-grid">
+          <article class="format-card">
+            <h3>Квартиры</h3>
+            <p>Аварийные вызовы, ремонт перед продажей, обновление санузла, кухни или отдельных комнат.</p>
+          </article>
+          <article class="format-card">
+            <h3>Частные дома</h3>
+            <p>Комбинация инженерных и отделочных задач, где важна координация работ и последовательность этапов.</p>
+          </article>
+          <article class="format-card">
+            <h3>Офисы</h3>
+            <p>Работы с минимальным простоем: электрика, косметика, исправление дефектов и подготовка к запуску.</p>
+          </article>
+          <article class="format-card">
+            <h3>Арендные объекты</h3>
+            <p>Подготовка помещения к сдаче, быстрые исправления между арендаторами и комплекс мелких задач за один выезд.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen">
+      <div class="container split-grid">
+        <div class="section-heading">
+          <p class="section-kicker">Экран 8</p>
+          <h2>Что получает клиент в итоге</h2>
+          <p>Этот блок усиливает доверие и снимает сомнения перед заявкой.</p>
+        </div>
+
+        <div class="result-grid">
+          <article class="result-card">
+            <h3>Собранную задачу</h3>
+            <p>Даже если проблема включает несколько видов работ, клиенту не нужно координировать всё самостоятельно.</p>
+          </article>
+          <article class="result-card">
+            <h3>Чистую логику цены</h3>
+            <p>Ориентир по стоимости понятен заранее, а итог не выглядит случайным.</p>
+          </article>
+          <article class="result-card">
+            <h3>Аккуратный визуальный итог</h3>
+            <p>Важно, чтобы после ремонта пространство не только работало, но и выглядело собранно.</p>
+          </article>
+          <article class="result-card">
+            <h3>Экономию времени</h3>
+            <p>Одна заявка закрывает целый набор бытовых и ремонтных задач без бесконечных созвонов.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="calculator">
+      <div class="container split-grid">
+        <div>
+          <div class="section-heading">
+            <p class="section-kicker">Экран 9</p>
+            <h2>Быстрый калькулятор предварительной стоимости</h2>
+            <p>
+              Калькулятор не перегружает страницу скриптами, но помогает человеку сразу сориентироваться и
+              психологически приближает к отправке заявки.
+            </p>
+          </div>
+
+          <form class="calc-card" id="calcForm">
+            <label for="qService">Направление работ</label>
+            <select id="qService" name="serviceType">
+              <option value="plumbing">Сантехника</option>
+              <option value="electrical">Электрика</option>
+              <option value="tiling">Плитка</option>
+              <option value="finishing">Отделка</option>
+              <option value="handyman">Мелкий бытовой сервис</option>
+            </select>
+
+            <label for="qAmount">Объём: точки, м² или погонные метры</label>
+            <input id="qAmount" type="number" min="1" value="10" inputmode="numeric" />
+
+            <label class="checkbox-row" for="qUrgent">
+              <input id="qUrgent" type="checkbox" />
+              <span>Срочный выезд</span>
+            </label>
+
+            <button id="calcBtn" class="btn" type="button">Рассчитать</button>
+            <p id="calcResult" class="result" aria-live="polite"></p>
+            <p class="fine-print">Это ориентир для первого контакта. Точный расчёт зависит от состояния объекта и деталей задачи.</p>
+          </form>
+        </div>
+
+        <aside class="seo-card">
+          <p class="callout-label">SEO-фокус</p>
+          <h3>Страница отвечает на запросы вроде “ремонт в Кишиневе”, “сантехник Кишинев” и “электрик на дом”</h3>
+          <p>
+            В структуре есть семантические разделы, локальные упоминания города и районов, отдельные блоки услуг,
+            преимущества, FAQ и форма заявки. Это помогает и поисковым системам, и реальным людям.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="screen accent-screen">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Экран 10</p>
+          <h2>Где работает сервис</h2>
+          <p>
+            Раздел под локальное SEO: полезен для запросов по районам и помогает пользователю быстро понять зону
+            обслуживания.
+          </p>
+        </div>
+
+        <div class="areas-grid">
+          <span>Центр</span>
+          <span>Ботаника</span>
+          <span>Буюканы</span>
+          <span>Рышкановка</span>
+          <span>Чеканы</span>
+          <span>Телецентр</span>
+          <span>Дурлешты</span>
+          <span>Кодру</span>
+          <span>Ставчены</span>
+          <span>Бачой</span>
+        </div>
+
+        <p class="area-note">
+          Если объект находится рядом с Кишиневом, заявку всё равно стоит оставить: многие адреса в пригородах также
+          удобно обслуживать.
+        </p>
+      </div>
+    </section>
+
+    <section class="screen faq-screen" id="faq">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Экран 11</p>
+          <h2>Частые вопросы перед заказом ремонта или выезда мастера</h2>
+        </div>
+
+        <div class="faq-list">
+          <details>
+            <summary>Можно ли вызвать мастера срочно?</summary>
+            <p>Да. Для срочных случаев предусмотрен ускоренный выезд, если есть свободное окно по текущей загрузке.</p>
+          </details>
+          <details>
+            <summary>Вы берёте мелкие задачи или только крупный ремонт?</summary>
+            <p>Да, сервис подходит и для точечных бытовых задач, и для комплексных работ по квартире, дому или офису.</p>
+          </details>
+          <details>
+            <summary>Как формируется цена?</summary>
+            <p>Цена зависит от типа работ, объёма, сложности доступа, срочности и текущего состояния объекта.</p>
+          </details>
+          <details>
+            <summary>Можно ли описать задачу без технических терминов?</summary>
+            <p>Да. Достаточно объяснить проблему простыми словами: что не работает, где находится и что нужно получить в итоге.</p>
+          </details>
+          <details>
+            <summary>С какими объектами вы работаете?</summary>
+            <p>С квартирами, домами, офисами, небольшими коммерческими помещениями и объектами под аренду.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen contact-screen" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <div class="section-heading">
+            <p class="section-kicker">Экран 12</p>
+            <h2>Оставьте заявку и получите понятный следующий шаг по вашей задаче</h2>
+            <p>
+              Чем точнее описание, тем быстрее можно оценить выезд, приоритет и предварительную стоимость. Форма простая
+              и не мешает конверсии.
+            </p>
+          </div>
+
+          <ul class="contact-points">
+            <li>Подходит для срочных и плановых работ</li>
+            <li>Можно описать задачу обычным языком</li>
+            <li>Заявка уходит напрямую в обработку</li>
+          </ul>
+        </div>
+
+        <form id="leadForm" class="lead-form">
+          <label for="name">Имя</label>
+          <input id="name" required name="name" autocomplete="name" placeholder="Как к вам обращаться" />
+
+          <label for="phone">Телефон</label>
+          <input id="phone" required name="phone" autocomplete="tel" placeholder="+373 ..." />
+
+          <label for="address">Адрес</label>
+          <input id="address" required name="address" autocomplete="street-address" placeholder="Район, улица, ориентир" />
+
+          <label for="contactService">Услуга</label>
+          <select id="contactService" name="service" required>
+            <option value="Сантехника">Сантехника</option>
+            <option value="Электрика">Электрика</option>
+            <option value="Плитка">Плитка</option>
+            <option value="Отделка">Отделка</option>
+            <option value="Мелкий бытовой сервис">Мелкий бытовой сервис</option>
+            <option value="Комплексный ремонт">Комплексный ремонт</option>
           </select>
 
-          <label for="qAmount" data-i18n="amount">Площадь / точки / метры</label>
-          <input id="qAmount" type="number" min="1" value="10" inputmode="numeric" />
+          <label for="description">Описание задачи</label>
+          <textarea
+            id="description"
+            name="description"
+            rows="5"
+            placeholder="Что случилось, что нужно сделать, насколько срочно и когда удобно принять мастера"
+          ></textarea>
 
-          <button id="calcBtn" class="btn" type="button" data-i18n="calc">Рассчитать</button>
-          <p id="calcResult" class="result" aria-live="polite"></p>
-        </div>
-      </article>
-
-      <article id="contact">
-        <h2 data-i18n="contact">Форма заявки</h2>
-        <form id="leadForm" class="card">
-          <input required name="name" autocomplete="name" data-i18n-placeholder="namePlaceholder" placeholder="Имя / Nume" />
-          <input required name="phone" autocomplete="tel" data-i18n-placeholder="phonePlaceholder" placeholder="Телефон / Telefon" />
-          <input required name="address" autocomplete="street-address" data-i18n-placeholder="addressPlaceholder" placeholder="Адрес / Adresa" />
-          <input required name="service" id="serviceField" data-i18n-placeholder="servicePlaceholder" placeholder="Услуга" />
-          <textarea name="description" rows="4" data-i18n-placeholder="descriptionPlaceholder" placeholder="Описание"></textarea>
-          <button id="submitBtn" class="btn" type="submit" data-i18n="send">Отправить</button>
+          <button id="submitBtn" class="btn" type="submit">Отправить заявку</button>
           <p id="formStatus" class="status" aria-live="polite"></p>
         </form>
-      </article>
+      </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>Repair24/7</p>
+      <p>Лендинг сервиса ремонта и бытовых услуг в Кишиневе с SEO-структурой и быстрой загрузкой.</p>
+    </div>
+  </footer>
 
   <script src="/script.js" defer></script>
 </body>
