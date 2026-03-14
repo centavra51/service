@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --bg: #f6efe4;
   --bg-soft: #fff9f2;
   --surface: rgba(255, 255, 255, 0.9);
@@ -821,5 +821,97 @@ textarea {
 
   .footer-row {
     flex-direction: column;
+  }
+}
+
+/* Messenger Widget */
+.messenger-widget {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  gap: 15px;
+}
+
+.messenger-toggle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+  animation: messenger-pulse 2s infinite;
+}
+
+.messenger-toggle:hover {
+  transform: scale(1.1);
+  background: var(--primary-dark);
+}
+
+.messenger-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.messenger-widget:hover .messenger-list {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+
+.messenger-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+
+.messenger-btn:hover {
+  transform: scale(1.1);
+}
+
+.messenger-btn.phone { background: #34b7f1; }
+.messenger-btn.whatsapp { background: #25d366; }
+.messenger-btn.telegram { background: #0088cc; }
+
+@keyframes messenger-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.4); }
+  70% { box-shadow: 0 0 0 15px rgba(249, 115, 22, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(249, 115, 22, 0); }
+}
+
+@media (max-width: 640px) {
+  .messenger-widget {
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .messenger-toggle {
+    width: 56px;
+    height: 56px;
+  }
+  
+  .messenger-btn {
+    width: 46px;
+    height: 46px;
   }
 }
