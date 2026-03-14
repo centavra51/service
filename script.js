@@ -1,4 +1,4 @@
-﻿(() => {
+(() => {
   const prices = {
     plumbing: 220,
     electrical: 210,
@@ -113,8 +113,15 @@
       contactService.value = serviceKey;
     }
 
-    if (descriptionField && !descriptionField.value.trim()) {
+    if (descriptionField) {
       descriptionField.value = labels[lang].desc(labels[lang][serviceKey], amount, qUrgent && qUrgent.checked);
+    }
+
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      setTimeout(() => {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }, 500);
     }
   }
 
